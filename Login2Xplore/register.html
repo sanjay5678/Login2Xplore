@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="resources/css/common.css">
+    <script src="resources/js/common.js"></script>
+    <script src="resources/js/register.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <script>
+        var Status="out";
+        var Name="register";
+        checkSession();
+    </script>
+    <style>
+        .bodypart{
+            margin-left:250px;
+            margin-right:250px;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+  <div id="header">
+
+  </div>
+    
+    <center>
+    <div class="bodypart">
+        <h1>Register</h1>
+        <br>
+        <div id="msg">
+            
+        </div>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Full Name</span>
+            <input type="text" class="form-control" id="fname" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+        </div>
+        <br>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Email</span>
+            <input type="text" class="form-control" onchange="checkEmail()" id="email" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+        </div>
+        <br>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Enter Password</span>
+            <input type="text" class="form-control" id="pass" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+        </div>
+        <br>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Password again   </span>
+            <input type="text" class="form-control" id="apass" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" required>
+        </div>
+        <br> 
+        <button type="button" onclick="saveUser()" class="btn btn-primary">Register</button>   
+    </center>
+    <div id="footer">
+
+    </div>
+    <script>loadFooter();loadHeader1();</script>
+</body>
+</html>

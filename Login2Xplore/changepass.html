@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="resources/js/common.js"></script>
+    <link rel="stylesheet" href="resources/css/common.css"> 
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script> 
+    <script src="resources/js/changepass.js"></script>
+    <script>
+      var Status="in";
+      var Name="changepass";
+      
+    </script>
+    <script>checkSession();</script>
+    <style>
+      .pass{
+        margin:100px
+      }
+    </style>
+</head>
+<body><center>
+  <div id="header">
+
+  </div><br>
+  <h2>Change Password</h2>
+    <div class="pass">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Current Password</span>
+        <input type="text" class="form-control" id="currPass" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" required>
+      </div><br>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">New Password</span>
+        <input type="text" class="form-control" id="newPass" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" required>
+      </div><br>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Confirm Password</span>
+        <input type="text" class="form-control" id="confirmPass" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" required>
+      </div>
+      <br>
+      <button type="button" onclick="changePass()" class="btn btn-primary">Submit</button>
+    </div>
+    <br>
+    
+    <br>
+    <div id="footer">
+
+    </div>
+    <script>loadFooter();loadHeader0();</script>
+  </center>
+</body>
+</html>    
